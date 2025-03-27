@@ -3,8 +3,9 @@ from django.contrib.auth.models import AbstractUser
 
 
 # Create your models here.
-# User, Channel, Video, Comment, Like, Dislike
-
+# User, Channel, Video, Comment, Like, Dislike, subsciebers
+# User: bio, profile_picture, phone_number, username, email, password
+# Channel: user, name, description, subscribes, likes, dislikes 
 class User(AbstractUser):
     bio = models.TextField(max_length=500, blank=True)
     profile_picture = models.URLField()
